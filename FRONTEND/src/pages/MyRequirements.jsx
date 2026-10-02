@@ -21,7 +21,7 @@ function MyRequirements({
     }
 
     fetch(
-      `http://10.19.77.40:5000/api/buyer-requirements?buyer_id=${buyerId}`
+      `https://agri-orbit.onrender.com/api/buyer-requirements?buyer_id=${buyerId}`
     )
       .then((response) => {
         if (!response.ok) {

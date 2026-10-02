@@ -439,7 +439,7 @@ function Dashboard({
         setError("");
 
         const response = await fetch(
-          "http://10.19.77.40:5000/api/latest-market-prices"
+          "https://agri-orbit.onrender.com/api/latest-market-prices"
         );
 
         if (!response.ok) {

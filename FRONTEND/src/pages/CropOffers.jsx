@@ -20,7 +20,7 @@ function CropOffers({
     }
 
     fetch(
-      `http://10.19.77.40:5000/api/crop-offers?farmer_id=${farmerId}`
+      `https://agri-orbit.onrender.com/api/crop-offers?farmer_id=${farmerId}`
     )
       .then((response) => {
         if (!response.ok) {

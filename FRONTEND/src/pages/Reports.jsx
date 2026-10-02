@@ -271,7 +271,7 @@ function Reports({
 
     try {
       const response = await fetch(
-        "http://10.19.77.40:5000/api/admin/reports"
+        "https://agri-orbit.onrender.com/api/admin/reports"
       );
 
       const data = await response.json();

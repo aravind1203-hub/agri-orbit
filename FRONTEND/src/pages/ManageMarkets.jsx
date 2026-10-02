@@ -360,7 +360,7 @@ function ManageMarkets({
       setError("");
 
       const response = await fetch(
-        "http://10.19.77.40:5000/api/admin/markets"
+        "https://agri-orbit.onrender.com/api/admin/markets"
       );
 
       const data = await response.json();
@@ -485,8 +485,8 @@ function ManageMarkets({
 
     try {
       const url = editingMarket
-        ? `http://10.19.77.40:5000/api/admin/markets/${editingMarket.id}`
-        : "http://10.19.77.40:5000/api/admin/markets";
+        ? `https://agri-orbit.onrender.com/api/admin/markets/${editingMarket.id}`
+        : "https://agri-orbit.onrender.com/api/admin/markets";
 
       const method = editingMarket
         ? "PUT"
@@ -543,7 +543,7 @@ function ManageMarkets({
 
     try {
       const response = await fetch(
-        `http://10.19.77.40:5000/api/admin/markets/${market.id}/status`,
+        `https://agri-orbit.onrender.com/api/admin/markets/${market.id}/status`,
         {
           method: "PUT",
           headers: {

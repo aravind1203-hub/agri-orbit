@@ -31,7 +31,7 @@ function ReceivedOffers({
       setError("");
 
       const response = await fetch(
-        `http://10.19.77.40:5000/api/crop-offers?buyer_id=${buyerId}`
+        `https://agri-orbit.onrender.com/api/crop-offers?buyer_id=${buyerId}`
       );
 
       const data = await response.json();
@@ -200,7 +200,7 @@ function ReceivedOffers({
       setError("");
 
       const response = await fetch(
-        `http://10.19.77.40:5000/api/crop-offers/${offer.id}/status`,
+        `https://agri-orbit.onrender.com/api/crop-offers/${offer.id}/status`,
         {
           method: "PUT",
 

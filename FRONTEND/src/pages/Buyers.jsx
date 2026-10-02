@@ -13,7 +13,7 @@ function Buyers({
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://10.19.77.40:5000/api/buyers")
+    fetch("https://agri-orbit.onrender.com/api/buyers")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch buyers");

@@ -415,7 +415,7 @@ function ManageCrops({
       setError("");
 
       const response = await fetch(
-        "http://10.19.77.40:5000/api/admin/crops"
+        "https://agri-orbit.onrender.com/api/admin/crops"
       );
 
       const data =
@@ -489,8 +489,8 @@ function ManageCrops({
 
     try {
       const url = editingCrop
-        ? `http://10.19.77.40:5000/api/admin/crops/${editingCrop.id}`
-        : "http://10.19.77.40:5000/api/admin/crops";
+        ? `https://agri-orbit.onrender.com/api/admin/crops/${editingCrop.id}`
+        : "https://agri-orbit.onrender.com/api/admin/crops";
 
       const method =
         editingCrop ? "PUT" : "POST";
@@ -572,7 +572,7 @@ function ManageCrops({
       try {
         const response =
           await fetch(
-            `http://10.19.77.40:5000/api/admin/crops/${crop.id}/status`,
+            `https://agri-orbit.onrender.com/api/admin/crops/${crop.id}/status`,
             {
               method: "PUT",
 

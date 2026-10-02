@@ -30,7 +30,7 @@ function FarmerDetails({
         setError("");
 
         const response = await fetch(
-          `http://10.19.77.40:5000/api/farmers/${farmerId}`
+          `https://agri-orbit.onrender.com/api/farmers/${farmerId}`
         );
 
         const data = await response.json();

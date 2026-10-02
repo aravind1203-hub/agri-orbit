@@ -336,7 +336,7 @@ function ManageOffers({
 
     try {
       const response = await fetch(
-        "http://10.19.77.40:5000/api/admin/offers"
+        "https://agri-orbit.onrender.com/api/admin/offers"
       );
 
       const data = await response.json();
@@ -433,7 +433,7 @@ function ManageOffers({
           : "rejected";
 
       const response = await fetch(
-        `http://10.19.77.40:5000/api/crop-offers/${offer.id}/status`,
+        `https://agri-orbit.onrender.com/api/crop-offers/${offer.id}/status`,
         {
           method: "PUT",
 

@@ -87,7 +87,7 @@ function FavouriteCrops({
         setError("");
 
         const response = await fetch(
-          `http://10.19.77.40:5000/api/favourite-crops?farmer_id=${farmerId}`
+          `https://agri-orbit.onrender.com/api/favourite-crops?farmer_id=${farmerId}`
         );
 
         const data = await response.json();
@@ -137,7 +137,7 @@ function FavouriteCrops({
       setRemovingId(favouriteId);
 
       const response = await fetch(
-        `http://10.19.77.40:5000/api/favourite-crops/${favouriteId}`,
+        `https://agri-orbit.onrender.com/api/favourite-crops/${favouriteId}`,
         {
           method: "DELETE",
         }

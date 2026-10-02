@@ -67,10 +67,10 @@ function PriceAlerts({
 
     Promise.all([
       fetch(
-        `http://10.19.77.40:5000/api/price-alerts?farmer_id=${farmerId}`
+        `https://agri-orbit.onrender.com/api/price-alerts?farmer_id=${farmerId}`
       ),
       fetch(
-        "http://10.19.77.40:5000/api/market-prices"
+        "https://agri-orbit.onrender.com/api/market-prices"
       ),
     ])
       .then(async ([alertsResponse, pricesResponse]) => {
@@ -217,7 +217,7 @@ function PriceAlerts({
     try {
 
       const response = await fetch(
-        "http://10.19.77.40:5000/api/price-alerts",
+        "https://agri-orbit.onrender.com/api/price-alerts",
         {
           method: "POST",
 
@@ -252,7 +252,7 @@ function PriceAlerts({
       /* Reload alerts */
       const alertsResponse =
         await fetch(
-          `http://10.19.77.40:5000/api/price-alerts?farmer_id=${farmerId}`
+          `https://agri-orbit.onrender.com/api/price-alerts?farmer_id=${farmerId}`
         );
 
       if (!alertsResponse.ok) {
@@ -338,7 +338,7 @@ function PriceAlerts({
 
       const response =
         await fetch(
-          `http://10.19.77.40:5000/api/price-alerts/${alertId}`,
+          `https://agri-orbit.onrender.com/api/price-alerts/${alertId}`,
           {
             method: "DELETE",
           }

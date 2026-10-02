@@ -48,7 +48,7 @@ function BuyerRegistration({
 
     try {
       const response = await fetch(
-        "http://10.19.77.40:5000/api/register/buyer",
+        "https://agri-orbit.onrender.com/api/register/buyer",
         {
           method: "POST",
           headers: {

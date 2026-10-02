@@ -431,7 +431,7 @@ function App() {
     try {
 
       const cropsResponse = await fetch(
-        "http://10.19.77.40:5000/api/crops"
+        "https://agri-orbit.onrender.com/api/crops"
       );
 
       if (!cropsResponse.ok) {
@@ -472,7 +472,7 @@ function App() {
 
         const favouriteResponse =
           await fetch(
-            `http://10.19.77.40:5000/api/favourite-crops?farmer_id=${farmerId}`
+            `https://agri-orbit.onrender.com/api/favourite-crops?farmer_id=${farmerId}`
           );
 
         if (!favouriteResponse.ok) {
@@ -497,7 +497,7 @@ function App() {
 
           const deleteResponse =
             await fetch(
-              `http://10.19.77.40:5000/api/favourite-crops/${favouriteRecord.id}`,
+              `https://agri-orbit.onrender.com/api/favourite-crops/${favouriteRecord.id}`,
               {
                 method: "DELETE",
               }
@@ -531,7 +531,7 @@ function App() {
 
         const addResponse =
           await fetch(
-            "http://10.19.77.40:5000/api/favourite-crops",
+            "https://agri-orbit.onrender.com/api/favourite-crops",
             {
               method: "POST",
 

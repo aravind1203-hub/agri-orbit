@@ -42,7 +42,7 @@ function BestMarket({ onBackToDashboard, onViewMarket }) {
   };
 
   useEffect(() => {
-    fetch("http://10.19.77.40:5000/api/market-prices")
+    fetch("https://agri-orbit.onrender.com/api/market-prices")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch market prices");

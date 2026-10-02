@@ -63,7 +63,7 @@ function SendCropOffer({
 
     try {
       const response = await fetch(
-        "http://10.19.77.40:5000/api/crop-offers",
+        "https://agri-orbit.onrender.com/api/crop-offers",
         {
           method: "POST",
 

@@ -51,7 +51,7 @@ function FarmerRegistration({
 
     try {
       const response = await fetch(
-        "http://10.19.77.40:5000/api/register/farmer",
+        "https://agri-orbit.onrender.com/api/register/farmer",
         {
           method: "POST",
           headers: {

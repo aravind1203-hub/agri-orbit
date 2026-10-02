@@ -342,7 +342,7 @@ function ManagePrices({
 
     try {
       const response = await fetch(
-        "http://10.19.77.40:5000/api/market-prices"
+        "https://agri-orbit.onrender.com/api/market-prices"
       );
 
       const data = await response.json();

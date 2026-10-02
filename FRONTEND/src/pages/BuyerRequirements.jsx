@@ -7,7 +7,7 @@ function BuyerRequirements({ onBackToDashboard }) {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://10.19.77.40:5000/api/buyer-requirements")
+    fetch("https://agri-orbit.onrender.com/api/buyer-requirements")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch buyer requirements");

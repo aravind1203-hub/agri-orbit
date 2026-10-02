@@ -34,7 +34,7 @@ function CropSearch({
         setError("");
 
         const response = await fetch(
-          "http://10.19.77.40:5000/api/crops"
+          "https://agri-orbit.onrender.com/api/crops"
         );
 
         const data = await response.json();

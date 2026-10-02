@@ -352,7 +352,7 @@ function ManageBuyers({
 
       try {
         const response = await fetch(
-          "http://10.19.77.40:5000/api/admin/buyers"
+          "https://agri-orbit.onrender.com/api/admin/buyers"
         );
 
         const data = await response.json();
@@ -462,7 +462,7 @@ function ManageBuyers({
 
       try {
         const response = await fetch(
-          `http://10.19.77.40:5000/api/admin/buyers/${buyer.id}/status`,
+          `https://agri-orbit.onrender.com/api/admin/buyers/${buyer.id}/status`,
           {
             method: "PUT",
 

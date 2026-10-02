@@ -324,7 +324,7 @@ function ManageFarmers({
 
       try {
         const response = await fetch(
-          "http://10.19.77.40:5000/api/admin/farmers"
+          "https://agri-orbit.onrender.com/api/admin/farmers"
         );
 
         const data = await response.json();
@@ -417,7 +417,7 @@ function ManageFarmers({
 
       try {
         const response = await fetch(
-          `http://10.19.77.40:5000/api/admin/farmers/${farmer.id}/status`,
+          `https://agri-orbit.onrender.com/api/admin/farmers/${farmer.id}/status`,
           {
             method: "PUT",
 

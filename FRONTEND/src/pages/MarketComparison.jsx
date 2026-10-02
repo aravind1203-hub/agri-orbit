@@ -46,7 +46,7 @@ function MarketComparison({ onBackToDashboard }) {
     Fetch market prices from backend.
   */
   useEffect(() => {
-    fetch("http://10.19.77.40:5000/api/market-prices")
+    fetch("https://agri-orbit.onrender.com/api/market-prices")
       .then((response) => {
         if (!response.ok) {
           throw new Error(

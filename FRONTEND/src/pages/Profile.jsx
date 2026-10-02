@@ -69,7 +69,7 @@ function Profile({
 
     try {
       const response = await fetch(
-        `http://10.19.77.40:5000/api/farmers/${farmerId}`,
+        `https://agri-orbit.onrender.com/api/farmers/${farmerId}`,
         {
           method: "PUT",
 
